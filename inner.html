@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Larina-sedona</title>
+	</head>
+	<body>
+		<header class="main-header">
+			<nav class="main-navigation">
+				<a class="main-header-logo" href="index.html">
+					<img src="" width="" height="" alt="Логотип города Седона">
+				</a>
+				<ul class="site-navigation">
+					<li><a href="info.html">Информация</a></li>
+					<li><a href="photo-video.html">Фото и видео</a></li>
+					<li><a href="map.html">Карта штата</a></li>
+					<li class="site-navigation-current"><a href="hotel.html">Гостиницы</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="container">
+			<section class="filters">
+				<h2 class="visually-hidden">Инфраструктура</h2>
+				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+					<fieldset>
+						<legend>Инфраструктура:</legend>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox"
+								type="checkbox" name="pool" checked>
+								Бассейн
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox"
+								type="checkbox" name="parking">
+								Парковка
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox"
+								type="checkbox" name="wifi">
+								Wi-Fi
+							</li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Тип жилья:</legend>
+						<ul>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox"
+								type="checkbox" name="hotel" checked>
+								Гостиница
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox"
+								type="checkbox" name="motel" checked>
+								Мотель
+							</li>
+							<li class="filter-option">
+								<input class="visually-hidden filter-input filter-input-checkbox"
+								type="checkbox" name="apartaments" checked>
+								Апартаменты
+							</li>
+						</ul>
+					</fieldset>
+					<!--не знаю, насколько удачно делать форму внутри формы, но пока только такая идея-->
+					<form action="/echo" method="post">
+						<label>Стоимость в сутки (Р):</label>
+						<input type="number" min=0 name="min-cost" placeholder="от 0">
+						<input type="number" max=3500 name="max-cost" placeholder="до 3000">
+						<input type="range" name="cost" min="0" max="3500" step="1">
+					</form>
+					<button type="submit" class="filter-button button">Показать</button>
+				</form>
+			</section>
+			<section class="result-filter">
+				<h1 class="visually-hidden">Найдено:</h1>
+				<h2>Сортировка:</h2>
+				<ul class="sequencing-attribute">
+					<li><a href="#"></a>по цене</li>
+					<li><a href="#"></a>по типу</li>
+					<li><a href="#"></a>по рейтингу</li>
+				</ul>
+				<ul class="sequencing-list">
+					<li class="sequencing-item"><a href="">top</a></li>
+					<li class="sequencing-item sequencing-item-current"><a href="">down</a></li>
+				</ul>
+			</section>
+			<section class="catalog">
+				<ul class="catalog-list">
+					<li class="catalog-item">
+						<!--не понимаю, почему картинка не отображается пустой площадью
+						заданных размеров с надписью-->
+						<p class="catalog-item-image">
+							<img src="img/Amara-Resort-&-Spa.jpg" width="220" height="150" alt="Amara Resort & Spa">
+						</p>
+						<h2>Amara Resort & Spa</h2>
+						<h3>Гостиница</h3>
+						<h3>от 3500 Р.</h3>
+						<img src="star" width="" height="" alt="star">
+						<a class="button more-info" href="catalog-item.html">Подробнее</a>
+						<a class="button book" href="#">Забронировать</a>
+						<p class="rate">Рейтинг: 8,5</p>
+					</li>
+					<li class="catalog-item">
+						<p class="catalog-item-image">
+							<img src="img/desert-quail-inn.jpg" width="220" height="150" alt="Desert Quail Inn">
+						</p>
+						<h2>Desert Quail Inn</h2>
+						<h3>Мотель</h3>
+						<h3>от 2000 Р.</h3>
+						<img src="star" width="" height="" alt="star">
+						<a class="button more-info" href="catalog-item.html">Подробнее</a>
+						<a class="button book" href="#">Забронировать</a>
+						<p class="rate">Рейтинг: 8,9</p>
+					</li>
+					<li class="catalog-item">
+						<p class="catalog-item-image">
+							<img src="img/Villas-at-poco-diablo.jpg" width="220" height="150" alt="Villas At Poco Diablo">
+						</p>
+						<h2>Villas At Poco Diablo</h2>
+						<h3>Апартаменты</h3>
+						<h3>от 4000 Р.</h3>
+						<img src="star" width="" height="" alt="star">
+						<a class="button more-info" href="catalog-item.html">Подробнее</a>
+						<a class="button book" href="#">Забронировать</a>
+						<p class="rate">Рейтинг: 9,2</p>
+					</li>
+				</ul>
+			</section>
+		</main>
+		<footer class="main-footer">
+			<!--ВСТАВИТЬ ФУТЕР-->
+		</footer>
+	</body>
+</html>
