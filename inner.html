@@ -62,13 +62,10 @@
 							</li>
 						</ul>
 					</fieldset>
-					<!--не знаю, насколько удачно делать форму внутри формы, но пока только такая идея-->
-					<form action="/echo" method="post">
 						<label>Стоимость в сутки (Р):</label>
 						<input type="number" min=0 name="min-cost" placeholder="от 0">
 						<input type="number" max=3500 name="max-cost" placeholder="до 3000">
 						<input type="range" name="cost" min="0" max="3500" step="1">
-					</form>
 					<button type="submit" class="filter-button button">Показать</button>
 				</form>
 			</section>
@@ -76,9 +73,9 @@
 				<h1 class="visually-hidden">Найдено:</h1>
 				<h2>Сортировка:</h2>
 				<ul class="sequencing-attribute">
-					<li><a href="#"></a>по цене</li>
-					<li><a href="#"></a>по типу</li>
-					<li><a href="#"></a>по рейтингу</li>
+					<li><a href="#">по цене</a></li>
+					<li><a href="#">по типу</a></li>
+					<li><a href="#">по рейтингу</a></li>
 				</ul>
 				<ul class="sequencing-list">
 					<li class="sequencing-item"><a href="">top</a></li>
@@ -88,41 +85,51 @@
 			<section class="catalog">
 				<ul class="catalog-list">
 					<li class="catalog-item">
-						<!--не понимаю, почему картинка не отображается пустой площадью
-						заданных размеров с надписью-->
-						<p class="catalog-item-image">
-							<img src="img/Amara-Resort-&-Spa.jpg" width="220" height="150" alt="Amara Resort & Spa">
-						</p>
-						<h2>Amara Resort & Spa</h2>
-						<h3>Гостиница</h3>
-						<h3>от 3500 Р.</h3>
-						<img src="star" width="" height="" alt="star">
-						<a class="button more-info" href="catalog-item.html">Подробнее</a>
-						<a class="button book" href="#">Забронировать</a>
+						<!--
+						В предыдущем замечании:
+						>> все до рейтинга обернуть в div
+						>> начиная с img и включая рейтинг обернуть в div
+						Вот в этом месте запуталась в дивах
+						-->
+						<div>
+							<p class="catalog-item-image">
+								<img src="img/Amara-Resort-&-Spa.jpg" width="220" height="150" alt="Amara Resort & Spa">
+							</p>
+							<h2>Amara Resort & Spa</h2>
+							<h2><a>Гостиница</a></h2>
+							<span>от 3500 Р.</span>
+							<img src="star" width="" height="" alt="star">
+							<a class="button more-info" href="catalog-item.html">Подробнее</a>
+							<a class="button book" href="#">Забронировать</a>
+						</div>
 						<p class="rate">Рейтинг: 8,5</p>
 					</li>
 					<li class="catalog-item">
-						<p class="catalog-item-image">
-							<img src="img/desert-quail-inn.jpg" width="220" height="150" alt="Desert Quail Inn">
-						</p>
-						<h2>Desert Quail Inn</h2>
-						<h3>Мотель</h3>
-						<h3>от 2000 Р.</h3>
-						<img src="star" width="" height="" alt="star">
-						<a class="button more-info" href="catalog-item.html">Подробнее</a>
-						<a class="button book" href="#">Забронировать</a>
+						<div>
+							<p class="catalog-item-image">
+								<img src="img/desert-quail-inn.jpg" width="220" height="150" alt="Desert Quail Inn">
+							</p>
+							<h2>Desert Quail Inn</h2>
+							<h2><a>Мотель</a></h2>
+							<span>от 2000 Р.</span>
+							<img src="star" width="" height="" alt="star">
+							<a class="button more-info" href="catalog-item.html">Подробнее</a>
+							<a class="button book" href="#">Забронировать</a>
+						</div>
 						<p class="rate">Рейтинг: 8,9</p>
 					</li>
 					<li class="catalog-item">
-						<p class="catalog-item-image">
-							<img src="img/Villas-at-poco-diablo.jpg" width="220" height="150" alt="Villas At Poco Diablo">
-						</p>
-						<h2>Villas At Poco Diablo</h2>
-						<h3>Апартаменты</h3>
-						<h3>от 4000 Р.</h3>
-						<img src="star" width="" height="" alt="star">
-						<a class="button more-info" href="catalog-item.html">Подробнее</a>
-						<a class="button book" href="#">Забронировать</a>
+						<div>
+							<p class="catalog-item-image">
+								<img src="img/Villas-at-poco-diablo.jpg" width="220" height="150" alt="Villas At Poco Diablo">
+							</p>
+							<h2>Villas At Poco Diablo</h2>
+							<h2><a>Апартаменты</a></h2>
+							<span>от 4000 Р.</span>
+							<img src="star" width="" height="" alt="star">
+							<a class="button more-info" href="catalog-item.html">Подробнее</a>
+							<a class="button book" href="#">Забронировать</a>
+						</div>
 						<p class="rate">Рейтинг: 9,2</p>
 					</li>
 				</ul>
