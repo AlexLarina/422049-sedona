@@ -3,9 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Larina-sedona-inner</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
-	<body>
+	<body class="inner-page">
 		<header class="main-header">
 			<nav class="main-navigation">
 				<a class="main-header-logo" href="index.html">
@@ -72,12 +74,12 @@
 				</form>
 			</section>
 			<section class="result-filter">
-				<h1 class="visually-hidden">Найдено:</h1>
+				<h1 class="found">Найдено:</h1>
 				<h2>Сортировка:</h2>
-				<ul class="sequencing-attribute">
-					<li><a href="#">по цене</a></li>
-					<li><a href="#">по типу</a></li>
-					<li><a href="#">по рейтингу</a></li>
+				<ul class="sequencing-attribute-list">
+					<li class="sequencing-attribute-list-item"><a href="#">по цене</a></li>
+					<li class="sequencing-attribute-list-item"><a href="#">по типу</a></li>
+					<li class="sequencing-attribute-list-item"><a href="#">по рейтингу</a></li>
 				</ul>
 				<ul class="sequencing-list">
 					<li class="sequencing-item"><a href="">top</a></li>
@@ -97,8 +99,8 @@
 							<p class="catalog-item-image">
 								<img src="img/inner-amara.jpg" width="135" height="90" alt="Amara Resort and Spa">
 							</p>
-							<h2>Amara Resort & Spa</h2>
-							<h2><a>Гостиница</a></h2>
+							<h2 class="catalog-item-name"><a>Amara Resort & Spa</a></h2>
+							<h2><a href="hotel.html">Гостиница</a></h2>
 							<span>от 3500 Р.</span>
 							<img src="star" width="" height="" alt="star">
 							<a class="button more-info" href="catalog-item.html">Подробнее</a>
@@ -111,8 +113,8 @@
 							<p class="catalog-item-image">
 								<img src="img/inner-desert.jpg" width="135" height="90" alt="Desert Quail Inn">
 							</p>
-							<h2>Desert Quail Inn</h2>
-							<h2><a>Мотель</a></h2>
+							<h2 class="catalog-item-name"><a>Desert Quail Inn</a></h2>
+							<h2><a href="hotel.html">Мотель</a></h2>
 							<span>от 2000 Р.</span>
 							<img src="star" width="" height="" alt="star">
 							<a class="button more-info" href="catalog-item.html">Подробнее</a>
@@ -125,8 +127,8 @@
 							<p class="catalog-item-image">
 								<img src="img/inner-villas.jpg" width="135" height="90" alt="Villas At Poco Diablo">
 							</p>
-							<h2>Villas At Poco Diablo</h2>
-							<h2><a>Апартаменты</a></h2>
+							<h2 class="catalog-item-name"><a>Villas At Poco Diablo</a></h2>
+							<h2><a href="hotel.html">Апартаменты</a></h2>
 							<span>от 4000 Р.</span>
 							<img src="star" width="" height="" alt="star">
 							<a class="button more-info" href="catalog-item.html">Подробнее</a>
@@ -151,8 +153,9 @@
 		<div class="copyright">
 			<p class="footer-copyright">
 				<b>Website by</b>
-				<img src="img/index-logo-name.svg" width="115" height="41" alt="html-academy">
-				<a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+				<a class="button button-copyright" href="https://htmlacademy.ru">
+					<img src="img/index-logo-name.svg" width="115" height="41" alt="html-academy">
+				</a>
 			</p>
 		</div>
 		</footer>

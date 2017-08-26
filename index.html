@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Larina: Седона</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -21,7 +23,6 @@
 	</header>
 	<main class="container">
 		
-		<!--маленькое изменение.-->
 		<img src="img/index-background.jpg" width="1200" height="773" alt="sedona-background">
 		<img src="img/index-welcome.png" width="458" height="352" alt="sedona-background">
 		
@@ -32,12 +33,12 @@
 			<!--Вопрос по дивам: здесь их два? Один для текста, другой для картинки ? 
 			И почему именно див? Используем как универсальный контейнер?
 			Дивам тут тоже необходимо добавить классы, верно ?-->
-			<div>
+			<div class="features-item-description">
 				<h2>Настоящий городок</h2>
 				<span>- № 1 -</span>
 				<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
 			</div>
-			<div>
+			<div class="features-item-photo">
 				<figure class="gallery-content">
 					<img src="img/index-feature-1.jpg" width="800" height="256" alt="Настоящий городок">
 				</figure>
@@ -46,24 +47,30 @@
 		<section class="subfeatures">
 			<ul class="subfeatures-list">
 				<li class="subfeature-item">
-					<img src="img/index-home.svg" width="75" height="72" alt="home">
+					<p>
+						<img src="img/index-home.svg" width="75" height="72" alt="home">
+					</p>
 					<h2>Жилье</h2>
-					<p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
+					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 				</li>
 				<li class="subfeature-item">
-					<img src="img/index-meal.svg" width="75" height="72" alt="meal">
+					<p>
+						<img src="img/index-meal.svg" width="75" height="72" alt="meal">
+					</p>
 					<h2>Еда</h2>
 					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 				</li>
 				<li class="subfeature-item">
-					<img src="img/index-gift.svg" width="75" height="72" alt="gift">
+					<p>
+						<img src="img/index-gift.svg" width="75" height="72" alt="gift">
+					</p>
 					<h2>Сувениры</h2>
 					<p>Не только китайского, но и местного производства!</p>
 				</li>
 			</ul>
 		</section>
 		<section class="features-with-photos">
-			<div>
+			<div class="features-item-description">
 				<h2>Там есть мост дьявола</h2>
 				<span>- № 2 -</span>
 				<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -78,21 +85,21 @@
 			<ul class="rest-of-features-list">
 				<li class="rest-of-features-item">
 					<!--оставшиеся фичи тоже в дивы обернуть ?-->
-					<div>
+					<div class="rest-of-features-item-description">
 						<h2>Небольшая площадь</h2>
 						<span>- № 3 -</span>
 						<p>Все достопримечательности находятся очень близко</p>
-					</div
+					</div>
 				</li>
 				<li class="rest-of-features-item">
-					<div>
+					<div class="rest-of-features-item-description">
 						<h2>Красивая дорога</h2>
 						<span>- № 4 -</span>
 						<p>Ехать в Седону из Лас-Вегаса совсем не скучно</p>
 					</div>
 				</li>
 				<li class="rest-of-features-item">
-					<div>
+					<div class="rest-of-features-item-description">
 						<h2>Мало туристов</h2>
 						<span>- № 5 -</span>
 						<p>Большинство едет в Гранд-Каньон и толпится там</p>
@@ -131,7 +138,7 @@
 	</main>
 	<footer class="main-footer">
 		<div class="hashtag">
-			<p class="footer-hashtag"><a href="">#VisitSedona</a></p>
+			<p class="footer-hashtag"><a href="#">#VisitSedona</a></p>
 		</div>
 		<div class="footer-social">
 			<ul>
@@ -143,8 +150,9 @@
 		<div class="copyright">
 			<p class="footer-copyright">
 				<b>Website by</b>
-				<img src="img/index-logo-name.svg" width="115" height="41" alt="html-academy">
-				<a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+				<a class="button button-copyright" href="https://htmlacademy.ru">
+					<img src="img/index-logo-name.svg" width="115" height="41" alt="html-academy">
+				</a>
 			</p>
 		</div>
 	</footer>

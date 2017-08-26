@@ -1,12 +1,365 @@
 body{
+	margin: 0;
+	padding: 0;
+	
 	font-family: "PT Sans", serif;
 	font-size: 14px;
 	line-height: 21px;
-	color: #000000;
 	font-weight: normal;
+	color: #333333;
+	text-transform: uppercase;
+	
+	background-color: #ffffff;
+	background-image: url("img/index-background.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	
+	box-shadow: 0 0 10px rgb(0,0,0); /*параметры пока от балды поставила*/
 }
-h2{
+
+.inner-page{
+	text-align: left;
+}
+
+h1{
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
+	color: #000000;
+	text-align: center;
+}
+h2{
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: normal;
+	color: #333333;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+}
+
+.main-navigation{
+	font-size: 14px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: bold;
+	
+	background-color: #ffffff;
+}
+
+.site-navigation{
+	list-style: none;
+}
+
+.site-navigation a{
+	color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus{
+	color: #81b3d2;
+}
+
+.site-navigation a:active{
+	color: #000000;
+	opacity: 0.2;
+}
+
+
+.features-with-photos{
+	background-color: #81b3d2;
+}
+
+.features-with-photos h2{
+	text-align: inherit;
+}
+
+.features-item-description{
+	text-align: center;
+}
+
+.features-item-description h2{
+	font-size: 21px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.features-item-description span,
+.features-item-description p{
+	color: #ffffff;
+	font-weight: normal;
+	/*из макета в фотошопе не могу достать высоту строки, в стайлгайде тоже нет*/
+}
+
+.subfeatures-list{
+	list-style: none;
+}
+
+.subfeature-item{
+	background-color: #ffffff;
+}
+
+.subfeature-item h2{
+	font-size: 21px;
+	text-align: center;
+	color: #000000;
+	font-weight: bold;
+}
+
+.subfeature-item p{
+	font-size: 14px;
+	text-align: center;
+	color: #333333;
+	font-weight: normal;
+}
+
+.rest-of-features-list{
+	list-style: none;
+}
+
+.rest-of-features-item{
+	background-color: #eeeeee;
+}
+
+.rest-of-features-item-description h2{
+	text-align: center;
+	font-size: 21px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.rest-of-features-item-description p,
+.rest-of-features-item-description span{ /*для спана выравнивание не работает, почему ?*/
+	text-align: center;
+	font-size: 14px;
+	color: #333333;
+	font-weight: normal;
+}
+
+.booking{
+	background-color: #ffffff;
+}
+
+.booking h2{
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.booking-info{
+	text-align: center;
+	font-size: 14px;
+	color: #333333;
+	font-weight: normal;
+}
+
+.booking-form-header a{
+	text-align: center;
+	font-size: 21px;
+	line-height: 26px;
+	color: #ffffff;
+	background-color: #766357;
+}
+
+.booking-form-header a:hover{
+	background-color: #604e43;
+}
+
+.booking-form-header a:active{
+	opacity: 0.5; /*тут сомневаюсь*/
+}
+
+.booking-item label{
+	color: #000000;
+}
+
+.booking-item input{
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+	color: #000000;
+}
+
+.booking-item input:hover{
+	background-color: #ebebeb;
+}
+
+.booking-item input:focus{
+	background-color: #ffffff;
+	border: 1px solid #f2f2f2;
+}
+
+.button{
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	
+	background-color: #81b3d2;
+	border: none;
+}
+
+.button:hover{
+	background-color: #669ec0;
+}
+
+.button:focus{
+	background-color: #5496bd;
+	opacity: 0.5;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  /*color: #ffffff; */
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+}
+/*вот это дело не работает*/
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #000000;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+
+  opacity: 0.5;
+}
+
+.filter-button{
+	background-color: transparent;
+	border: 2px solid #ffffff;
+}
+
+.filter-button:hover{
+	color: #000000;
+	background-color: #ffffff;
+	font-weight: normal;
+	font-size: 14px;
+}
+/*а тут нумерация осталась, что за магия ?*/
+.sequencing-attribute-list{
+	list-style: none;
+}
+
+.sequencing-attribute-list-item a{
+	color: #000000;
+	opacity: 0.5;
+	border-bottom: 1px dashed #81b3d2;
+}
+
+.sequencing-attribute-list-item a:hover{
+	color: #81b3d2;
+	opacity: 1;
+}
+
+.sequencing-attribute-list-item a:active{
+	border-bottom: none;
+	color: #000000;
+	opacity: 1;
+}
+
+.sequencing-item a{
+	color: #000000;
+	opacity: 0.5;
+}
+
+.sequencing-item a:hover{
+	color: #000000;
+	opacity: 1;
+}
+.sequencing-item a:active{
+	color: #81b3d2;
+}
+
+.sequencing-list{
+	list-style: none;
+}
+
+.catalog-list{
+	list-style: none;	
+}
+
+.catalog-item-name a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.catalog-item-name a:hover{
+	color: #81b3d2;
+}
+
+.catalog-item-name a:active{
+	color: #000000;
+	opacity: 0.5;
+}
+
+.more-info{
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+
+.more-info:hover{
+	background-color: #669ec0;
+}
+
+.more-info:active{
+	background-color: #5496bd;
+}
+
+.book{
+	background-color: #766357;
+	color: #ffffff;
+}
+
+.book:hover{
+	background-color: #604e43;
+}
+
+.book:active{
+	background-color: #503e33;
+	/*как сделать прозрачность только для текста, а не для кнопки в целом ? нужен отдельный класс*/
+}
+
+.main-footer{
+	color: #000000;
+
+	background-color: #ffffff;
+	background-image: url("img/footer.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.footer-hashtag a{
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	color: #000000
+}
+
+.footer-social ul{
+	list-style: none;
+}
+
+.social-button{
+	color: #000000;
+}
+/*не знаю, как стилизовать кнопку копирайта, ведь это картинка. как раскрасить картинку ?*/
+.button-copyright{
+	
 }
