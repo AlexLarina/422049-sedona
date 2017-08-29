@@ -8,11 +8,10 @@ body {
   color: #333333;
   text-transform: uppercase;
   background-color: #ffffff;
-  background-image: url("img/index-background.jpg");
+  background-image: url("../img/index-background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  box-shadow: 0 0 10px rgb(0, 0, 0);
-  /*параметры пока от балды поставила*/
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container {
@@ -24,8 +23,8 @@ body {
 .inner-page {
   text-align: left;
 }
-
-h1 {
+/*c main h1 и h2 будут считаться глобальными стилями ?*/
+main h1 {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -33,7 +32,7 @@ h1 {
   text-align: center;
 }
 
-h2 {
+main h2 {
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
@@ -110,6 +109,7 @@ a {
 .features-item-description span, .features-item-description p {
   color: #ffffff;
   font-weight: normal;
+  line-height: 1;
   /*из макета в фотошопе не могу достать высоту строки, в стайлгайде тоже нет*/
 }
 
@@ -373,17 +373,15 @@ a {
 }
 
 .book:active {
-  background-color: #503e33;
+  /*background-color: #503e33;*/
   /*как сделать прозрачность только для текста, а не для кнопки в целом ? нужен отдельный класс*/
+  background-color: rgba(80, 62, 51, 0.5);
 }
 
 .main-footer {
   display: flex;
   color: #000000;
   background-color: #ffffff;
-  background-image: url("img/footer.jpg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
   
   margin: 0 auto;
 }
@@ -407,4 +405,7 @@ a {
 
 /*не знаю, как стилизовать кнопку копирайта, ведь это картинка. как раскрасить картинку ?*/
 
-.button-copyright {}
+.button-copyright {
+	/*пока не разобралась, тэг <svg> не работает в html*/
+	fill: #81b3d2;
+}
