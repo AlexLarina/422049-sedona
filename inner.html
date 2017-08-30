@@ -8,6 +8,7 @@
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body class="inner-page">
+	<div class="container">
 		<header class="main-header">
 			<nav class="main-navigation">
 				<a class="main-header-logo" href="index.html">
@@ -24,7 +25,8 @@
 		<main class="container">
 			<section class="filters">
 				<h2 class="visually-hidden">Инфраструктура</h2>
-				<img src="img/inner-filter-background.jpg" width="1200" height="773" alt="Фильтры">
+				<img src="img/inner-filter-background.jpg" width="1200" height="217" alt="Фильтры">
+				
 				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 					<fieldset>
 						<legend>Инфраструктура:</legend>
@@ -66,13 +68,16 @@
 							</li>
 						</ul>
 					</fieldset>
+					<div class="price">
 						<label>Стоимость в сутки (Р):</label>
 						<input type="number" min=0 name="min-cost" placeholder="от 0">
 						<input type="number" max=3500 name="max-cost" placeholder="до 3000">
 						<input type="range" name="cost" min="0" max="3500" step="1">
-					<button type="submit" class="filter-button button">Показать</button>
+						<button type="submit" class="filter-button button">Показать</button>
+					</div>
 				</form>
 			</section>
+			
 			<section class="result-filter">
 				<h1 class="found">Найдено:</h1>
 				<h2>Сортировка:</h2>
@@ -86,6 +91,7 @@
 					<li class="sequencing-item sequencing-item-current"><a href="">down</a></li>
 				</ul>
 			</section>
+			
 			<section class="catalog">
 				<ul class="catalog-list">
 					<li class="catalog-item">
@@ -95,34 +101,66 @@
 						>> начиная с img и включая рейтинг обернуть в div
 						Вот в этом месте запуталась в дивах
 						-->
-						<div>
 							<p class="catalog-item-image">
 								<img src="img/inner-amara.jpg" width="135" height="90" alt="Amara Resort and Spa">
 							</p>
-							<h2 class="catalog-item-name"><a>Amara Resort & Spa</a></h2>
-							<h2><a href="hotel.html">Гостиница</a></h2>
-							<span>от 3500 Р.</span>
-							<img src="star" width="" height="" alt="star">
-							<a class="button more-info" href="catalog-item.html">Подробнее</a>
-							<a class="button book" href="#">Забронировать</a>
-						</div>
-						<p class="rate">Рейтинг: 8,5</p>
+							<div class="catalog-item-info">
+								<h2 class="catalog-item-name"><a>Amara Resort & Spa</a></h2>
+								<div class="catalog-item-type-price">
+									<h2><a href="hotel.html">Гостиница</a></h2>
+									<span>от 3500 Р.</span>
+								</div>
+								<div class="catalog-item-buttons">
+									<a class="button more-info" href="catalog-item.html">Подробнее</a>
+									<a class="button book" href="#">Забронировать</a>
+								</div>
+							</div>
+							<div class="rate">
+								<img src="img/star.svg" width="15" height="15" alt="star">
+								<p class="rate">Рейтинг: 8,5</p>
+							</div>	
 					</li>
+					
 					<li class="catalog-item">
-						<div>
 							<p class="catalog-item-image">
-								<img src="img/inner-desert.jpg" width="135" height="90" alt="Desert Quail Inn">
+								<img src="img/inner-amara.jpg" width="135" height="90" alt="Amara Resort and Spa">
 							</p>
-							<h2 class="catalog-item-name"><a>Desert Quail Inn</a></h2>
-							<h2><a href="hotel.html">Мотель</a></h2>
-							<span>от 2000 Р.</span>
-							<img src="star" width="" height="" alt="star">
-							<a class="button more-info" href="catalog-item.html">Подробнее</a>
-							<a class="button book" href="#">Забронировать</a>
-						</div>
-						<p class="rate">Рейтинг: 8,9</p>
+							<div class="catalog-item-info">
+								<h2 class="catalog-item-name"><a>Desert Quail Inn</a></h2>
+								<div class="catalog-item-type-price">
+									<h2><a href="hotel.html">Мотель</a></h2>
+									<span>от 2000 Р.</span>
+								</div>
+								<div class="catalog-item-buttons">
+									<a class="button more-info" href="catalog-item.html">Подробнее</a>
+									<a class="button book" href="#">Забронировать</a>
+								</div>
+							</div>
+							<div class="rate">
+								<img src="img/star.svg" width="15" height="15" alt="star">
+								<p class="rate">Рейтинг: 8,9</p>
+							</div>
 					</li>
 					<li class="catalog-item">
+					<p class="catalog-item-image">
+								<img src="img/inner-amara.jpg" width="135" height="90" alt="Amara Resort and Spa">
+							</p>
+							<div class="catalog-item-info">
+								<h2 class="catalog-item-name"><a>Villas At Poco Diablo</a></h2>
+								<div class="catalog-item-type-price">
+									<h2><a href="hotel.html">Гостиница</a></h2>
+									<span>от 4000 Р.</span>
+								</div>
+								<div class="catalog-item-buttons">
+									<a class="button more-info" href="catalog-item.html">Подробнее</a>
+									<a class="button book" href="#">Забронировать</a>
+								</div>
+							</div>
+							<div class="rate">
+								<img src="img/star.svg" width="15" height="15" alt="star">
+								<p class="rate">Рейтинг: 9,2</p>
+							</div>
+					<!--
 						<div>
 							<p class="catalog-item-image">
 								<img src="img/inner-villas.jpg" width="135" height="90" alt="Villas At Poco Diablo">
@@ -134,7 +172,7 @@
 							<a class="button more-info" href="catalog-item.html">Подробнее</a>
 							<a class="button book" href="#">Забронировать</a>
 						</div>
-						<p class="rate">Рейтинг: 9,2</p>
+						<p class="rate">Рейтинг: 9,2</p>-->
 					</li>
 				</ul>
 			</section>
@@ -159,5 +197,6 @@
 			</p>
 		</div>
 		</footer>
+	</div>	
 	</body>
 </html>

@@ -264,7 +264,26 @@ a {
   opacity: 0.5;
 }
 
+.filter{
+	display: flex;
+	justify-content: space-between;
+	
+	position: absolute;
+	top: 117px;
+	left: 111px;
+}
+
+.price{
+	display: flex;
+	flex-direction: column;
+}
+
+.price > * {
+	height: 40px;
+}
+
 .filter fieldset {
+  width: 350px;
   border: none;
 }
 
@@ -304,11 +323,27 @@ a {
   font-size: 14px;
 }
 
+.result-filter{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
+	/*иначе как этим маргином не выход отлепить флекс-элементы от правого края контейнера*/
+	/*видимо, надо поколдовать с justify-content или align-items, но у меня не получилось магии*/
+	margin-right: 150px;
+}
 
-/*а тут нумерация осталась, что за магия ?*/
+.result-filter h1{
+	width: 240px;
+}
 
 .sequencing-attribute-list {
-  list-style: none;
+	display: flex;
+	list-style: none;
+}
+
+.sequencing-attribute-list-item{
+	width: 90px;
 }
 
 .sequencing-attribute-list-item a {
@@ -343,11 +378,44 @@ a {
 }
 
 .sequencing-list {
+	display: flex;
   list-style: none;
 }
 
+.sequencing-item{
+	width: 40px;
+}
+
 .catalog-list {
+	display: flex;
+	flex-direction: column;
   list-style: none;
+}
+
+.catalog-item{
+	height: 150px;
+	outline: 1px dashed red;
+	
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog-item-info{
+	outline: 1px dashed red;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.catalog-item-info > * {
+	height: 50px;
+	outline: 1px dashed red;
+}
+
+.catalog-item-type-price{
+	display: flex;
+	justify-content: space-between;
 }
 
 .catalog-item-name a {
@@ -390,6 +458,16 @@ a {
   /*background-color: #503e33;*/
   /*как сделать прозрачность только для текста, а не для кнопки в целом ? нужен отдельный класс*/
   background-color: rgba(80, 62, 51, 0.5);
+}
+
+.rate{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.rate > *{
+	height: 50px;
 }
 
 .main-footer {
