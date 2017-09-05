@@ -24,7 +24,7 @@
 		</header>
 		<main class="container">
 			<section class="filters">
-				<h2 class="visually-hidden">Инфраструктура</h2>
+				<!--<h2 class="visually-hidden">Инфраструктура</h2>-->
 				<img src="img/inner-filter-background.jpg" width="1200" height="217" alt="Фильтры">
 				
 				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -70,8 +70,8 @@
 					</fieldset>
 					<div class="price">
 						<label>Стоимость в сутки (Р):</label>
-						<input type="number" min=0 name="min-cost" placeholder="от 0">
-						<input type="number" max=3500 name="max-cost" placeholder="до 3000">
+						<input type="number" min=0 max=3500 name="min-max-cost" placeholder="от 0 до 3000">
+						<!--<input type="number" max=3500 name="max-cost" placeholder="до 3000">-->
 						<input type="range" name="cost" min="0" max="3500" step="1">
 						<button type="submit" class="filter-button button">Показать</button>
 					</div>
@@ -115,7 +115,7 @@
 									<a class="button book" href="#">Забронировать</a>
 								</div>
 							</div>
-							<div class="rate">
+							<div class="rating">
 								<img src="img/star.svg" width="15" height="15" alt="star">
 								<p class="rate">Рейтинг: 8,5</p>
 							</div>	
@@ -123,7 +123,7 @@
 					
 					<li class="catalog-item">
 							<p class="catalog-item-image">
-								<img src="img/inner-amara.jpg" width="135" height="90" alt="Amara Resort and Spa">
+								<img src="img/inner-desert.jpg" width="135" height="90" alt="Desert Quail Inn">
 							</p>
 							<div class="catalog-item-info">
 								<h2 class="catalog-item-name"><a>Desert Quail Inn</a></h2>
@@ -136,14 +136,14 @@
 									<a class="button book" href="#">Забронировать</a>
 								</div>
 							</div>
-							<div class="rate">
+							<div class="rating">
 								<img src="img/star.svg" width="15" height="15" alt="star">
 								<p class="rate">Рейтинг: 8,9</p>
 							</div>
 					</li>
 					<li class="catalog-item">
 					<p class="catalog-item-image">
-								<img src="img/inner-amara.jpg" width="135" height="90" alt="Amara Resort and Spa">
+								<img src="img/inner-villas.jpg" width="135" height="90" alt="Villas At Poco Diablo">
 							</p>
 							<div class="catalog-item-info">
 								<h2 class="catalog-item-name"><a>Villas At Poco Diablo</a></h2>
@@ -156,23 +156,10 @@
 									<a class="button book" href="#">Забронировать</a>
 								</div>
 							</div>
-							<div class="rate">
+							<div class="rating">
 								<img src="img/star.svg" width="15" height="15" alt="star">
-								<p class="rate">Рейтинг: 9,2</p>
+								<div class="rate"><p>Рейтинг: 9,2</p></div>
 							</div>
-					<!--
-						<div>
-							<p class="catalog-item-image">
-								<img src="img/inner-villas.jpg" width="135" height="90" alt="Villas At Poco Diablo">
-							</p>
-							<h2 class="catalog-item-name"><a>Villas At Poco Diablo</a></h2>
-							<h2><a href="hotel.html">Апартаменты</a></h2>
-							<span>от 4000 Р.</span>
-							<img src="star" width="" height="" alt="star">
-							<a class="button more-info" href="catalog-item.html">Подробнее</a>
-							<a class="button book" href="#">Забронировать</a>
-						</div>
-						<p class="rate">Рейтинг: 9,2</p>-->
 					</li>
 				</ul>
 			</section>

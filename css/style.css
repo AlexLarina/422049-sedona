@@ -74,6 +74,12 @@ a {
 }
 
 .site-navigation {
+	padding: 0;
+	margin: 0;
+	
+	padding-left: 70px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
@@ -100,9 +106,19 @@ a {
   opacity: 0.2;
 }
 
+/*зачем вообще visually-hidden заголовки*/
+
+/* h2 .visually-hidden{
+	display: none;
+} */
+
+/*--- Стили главной страницы ---*/
+
 .features-with-photos {
   display: flex;
   background-color: #81b3d2;
+  
+  height: 256px;
 }
 
 .features-with-photos h2 {
@@ -112,12 +128,19 @@ a {
 .features-item-description {
   width: 400px;
   text-align: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 40px;
 }
 
 .features-item-description h2 {
+  margin: 0;
   font-size: 21px;
   color: #ffffff;
   font-weight: bold;
+  width: 150px;
+  padding-left: 65px;
+  padding-bottom: 20px;
 }
 
 .features-item-description span, .features-item-description p {
@@ -131,49 +154,78 @@ a {
   width: 800px;
 }
 
+.gallery-content{
+	margin: 0;
+}
+
 .subfeatures-list {
+	padding: 0;
+	margin: 0;
   display: flex;
   list-style: none;
+  
+  margin-bottom: 65px;
 }
 
 .subfeature-item {
   background-color: #ffffff;
  
   width: 400px;
+  padding-top: 50px;
 }
 
 .subfeature-item h2 {
+	margin: 0;
   font-size: 21px;
   text-align: center;
   color: #000000;
   font-weight: bold;
+  padding-top: 25px;
 }
 
 .subfeature-item p {
+	margin: 0;
   font-size: 14px;
   text-align: center;
   color: #333333;
   font-weight: normal;
+  
+  width: 255px;
+  padding-left: 70px;
 }
 
 .rest-of-features-list {
+	margin: 0;
+	padding: 0; 
+	
 	display: flex;
 	list-style: none;
 }
 
 .rest-of-features-item {
+	padding-top: 60px;
 	background-color: #eeeeee;
 	width: 400px;
 }
 
 .rest-of-features-item-description h2 {
+	width: 125px;
+	margin: 0 auto;
   text-align: center;
   font-size: 21px;
   color: #000000;
   font-weight: bold;
 }
-
-.rest-of-features-item-description p, .rest-of-features-item-description span {
+/*это span не центруется, почему ?*/
+.rest-of-features-item-description span{
+	margin: 0 auto;
+}
+.rest-of-features-item-description p{
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 60px;
+	
+	width: 220px;
   /*для спана выравнивание не работает, почему ?*/
   text-align: center;
   font-size: 14px;
@@ -193,6 +245,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   margin: 0 auto;
+  margin-top: 60px;
 }
 
 .booking-info {
@@ -201,6 +254,7 @@ a {
   color: #333333;
   font-weight: normal;
   margin: 0 auto;
+  width: 440px;
 }
 
 .booking form{
@@ -264,13 +318,19 @@ a {
   opacity: 0.5;
 }
 
+/* --- Стили внутренней страницы ---*/
+
 .filter{
+	padding: 0;
+	margin: 0;
 	display: flex;
 	justify-content: space-between;
 	
 	position: absolute;
-	top: 117px;
+	top: 85px;
 	left: 111px;
+	
+	width: 1055px;
 }
 
 .price{
@@ -283,6 +343,9 @@ a {
 }
 
 .filter fieldset {
+  padding: 0;
+  margin: 0;
+  
   width: 350px;
   border: none;
 }
@@ -291,7 +354,7 @@ a {
   font-size: 16px;
   line-height: 21px;
   font-weight: bold;
-  /*color: #ffffff; */
+  color: #ffffff; 
 }
 
 .filter ul {
@@ -299,7 +362,13 @@ a {
   line-height: 18px;
 }
 
+.filter li{
+	color: #ffffff; 
+}
 
+label{
+	color: #ffffff;
+}
 /*вот это дело не работает*/
 
 .filter-input:hover+label, .filter-input:focus+label {
@@ -324,22 +393,45 @@ a {
 }
 
 .result-filter{
+	padding: 0;
+	margin: 0;
+	
+	margin-left: 111px;
+	padding-top: 30px;
+	
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: stretch;
 	/*иначе как этим маргином не выход отлепить флекс-элементы от правого края контейнера*/
 	/*видимо, надо поколдовать с justify-content или align-items, но у меня не получилось магии*/
-	margin-right: 150px;
 }
 
 .result-filter h1{
-	width: 240px;
+	padding: 0;
+	margin: 0; 
+	
+	width: 230px;
+	margin-right: 40px;
+	text-align: left;
+}
+
+
+.result-filter h2{
+	padding: 0;
+	margin: 0;
+	
+	margin-right: 40px;
+	width: 90px;
 }
 
 .sequencing-attribute-list {
+	padding: 0;
+	margin: 0;
+	
 	display: flex;
 	list-style: none;
+	width: 100%;
 }
 
 .sequencing-attribute-list-item{
@@ -378,6 +470,9 @@ a {
 }
 
 .sequencing-list {
+	padding: 0;
+	margin: 0;
+	
 	display: flex;
   list-style: none;
 }
@@ -387,6 +482,9 @@ a {
 }
 
 .catalog-list {
+	padding: 0;
+	margin: 0;
+	
 	display: flex;
 	flex-direction: column;
   list-style: none;
@@ -396,11 +494,25 @@ a {
 	height: 150px;
 	outline: 1px dashed red;
 	
+	margin-left: 111px;
+	
 	display: flex;
 	justify-content: space-between;
 }
 
+.catalog-item-image{
+	margin: 0;
+	
+	padding-top: 30px;
+	padding-bottom: 30px;
+	
+	width: 135px;
+}
+
 .catalog-item-info{
+	width: 100%;
+	margin-left: 30px;
+	
 	outline: 1px dashed red;
 	display: flex;
 	flex-direction: column;
@@ -409,18 +521,25 @@ a {
 }
 
 .catalog-item-info > * {
-	height: 50px;
+	/*height: 50px;*/
 	outline: 1px dashed red;
 }
 
-.catalog-item-type-price{
-	display: flex;
-	justify-content: space-between;
+
+.catalog-item-name{
+	margin: 0;
+	height: 46px;
+	text-align: left;
+	
+	padding-top: 25px;
 }
 
 .catalog-item-name a {
-  text-decoration: none;
-  color: #000000;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
 }
 
 .catalog-item-name a:hover {
@@ -432,9 +551,39 @@ a {
   opacity: 0.5;
 }
 
+.catalog-item-type-price{	
+	display: flex;
+	justify-content: flex-start;
+	
+	height: 100px;
+}
+
+.catalog-item-type-price h2{
+	margin: 0;
+	padding-top: 15px;
+	padding-right: 45px;
+	font-size: 14px;
+}
+
+.catalog-item-type-price span{
+	padding-top: 18px;
+}
+
+.catalog-item-buttons{
+	padding-top: 3px;
+	height: 100%;
+}
+
+.catalog-item-buttons .button{
+	width: 110px;
+}
+
 .more-info {
   color: #ffffff;
   background-color: #81b3d2;
+  padding-right: 5px;
+  /*при попытке уменьшить текст внутри кнопки, вся кнопка уменьшается в размерах*/
+  /*font-size: 14px;*/
 }
 
 .more-info:hover {
@@ -460,26 +609,40 @@ a {
   background-color: rgba(80, 62, 51, 0.5);
 }
 
-.rate{
+.rating{
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: flex-end;
+	
+	height: 50px;
+	width: 120px;
 }
 
-.rate > *{
-	height: 50px;
+.rating img{
+	padding-top: 30px;
+}
+
+.rate{
+	margin: 0;
+	padding-top: 45px;
+	background-color: f2f2f2; /*не могу задать цвет фона для рейтинга, хотя вроде как применяю свойство к контейнеру*/
 }
 
 .main-footer {
   display: flex;
+  justify-content: space-between;
   color: #000000;
   background-color: #ffffff;
   
   margin: 0 auto;
+  padding-top: 30px;
 }
 
-.hashtag{
+.hashtag p{
+	margin: 0;
 	width: 400px;
+	
+	padding-left: 130px;
 }
 
 .footer-hashtag a {
@@ -490,8 +653,14 @@ a {
 }
 
 .footer-social ul {
+	margin: 0;
+	padding: 0;
+	
   width: 400px;
   list-style: none;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .social-button {
@@ -501,8 +670,11 @@ a {
 
 .copyright{
 	width: 400px;
+	padding-left: 300px;
 }
-
+.copyright p{
+	margin: 0;
+}
 /*не знаю, как стилизовать кнопку копирайта, ведь это картинка. как раскрасить картинку ?*/
 
 .button-copyright {
