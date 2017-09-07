@@ -14,17 +14,40 @@ body {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
+.visually-hidden:not(:focus):not(:active){
+	position: absolute;
+	
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	
+	white-space: nowrap;
+	
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
   outline: 1px solid red;
 }
 
-.welcome > img:last-child{
+.welcome > img:nth-child(2){
 	position: absolute;
 	margin: 0 auto;
 	top: 130px;
 	left: 410px;
+}
+
+.welcome > img:last-child{
+	position: absolute;
+	margin: 0 auto;
+	top: 470px;
+	left: 32px;
 }
 
 .inner-page {
@@ -628,6 +651,92 @@ label{
 	background-color: f2f2f2; /*не могу задать цвет фона для рейтинга, хотя вроде как применяю свойство к контейнеру*/
 }
 
+.booking-info{
+	margin-bottom: 140px;
+}
+
+.booking-form-header{
+	position: absolute;
+	top: 2050px;
+	left: 350px;		
+}
+
+.booking-form-header a{
+	padding: 30px 140px;
+}
+
+.booking-form{
+	z-index: 1;
+	position: absolute;
+	top: 2120px;
+	left: 350px;
+	
+	width: 573px;
+	background-color: #ffffff;
+}
+
+.booking-item{
+	margin-left: 55px;
+}
+
+.booking-item:first-child{
+	margin-top: 55px;
+}
+
+.booking-item label{
+	font-weight: bold;
+	margin-right: 17px;
+}
+
+.booking-item input:first-child{
+	margin-left: 2px;
+}
+
+/*этот прием не работает, а жаль*/
+/*.booking-item label:first-child{
+	margin-right: 2px;
+}*/
+
+input[type="date"]{
+	height: 40px;
+	width: 345px;
+	padding-left: 10px;
+}
+
+input[type="number"]{
+	margin: 0;
+	height: 40px;
+	width: 65px;
+	padding-left: 50px;
+}
+
+.adult-and-children{
+	display: flex;
+}
+
+.adult-and-children > .booking-item{
+	margin: 0;
+}
+
+.adult-and-children > .booking-item{
+	margin-left: 55px;
+}
+
+.adult-and-children > .booking-item:first-child label{
+	margin-right: 35px;
+}
+
+.adult-and-children > .booking-item:last-child label{
+	margin-right: 27px;
+}
+
+.button-find{
+	display: block;
+	margin: 50px 55px;
+	padding: 15px 0;
+	width: 463px;
+}
+
 .main-footer {
   display: flex;
   justify-content: space-between;
@@ -637,6 +746,7 @@ label{
   margin: 0 auto;
   padding-top: 30px;
 }
+
 
 .hashtag p{
 	margin: 0;
@@ -656,17 +766,23 @@ label{
 	margin: 0;
 	padding: 0;
 	
-  width: 400px;
+  width: 200px;
   list-style: none;
-  width: 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.social-button {
-  color: #000000;
+.footer-social li{
+	width: 47px;
+	height: 47px;
+	background-color: #81b3d2;
+	margin-right: 5px;
+	margin-bottom: 20px;
 }
 
+.social-button img{
+	position: relative;
+}
 
 .copyright{
 	width: 400px;
