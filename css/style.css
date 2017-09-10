@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  
   font-family: "PT Sans", serif;
   font-size: 14px;
   line-height: 21px;
@@ -11,7 +12,6 @@ body {
   /*background-image: url("../img/index-background.jpg");
   background-position: top center;
   background-repeat: no-repeat;*/
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden:not(:focus):not(:active){
@@ -34,19 +34,20 @@ body {
   width: 1200px;
   margin: 0 auto;
   outline: 1px solid red;
+  box-shadow: -3px 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .welcome > img:nth-child(2){
 	position: absolute;
 	margin: 0 auto;
 	top: 130px;
-	left: 410px;
+	left: 400px; 
 }
 
 .welcome > img:last-child{
 	position: absolute;
 	margin: 0 auto;
-	top: 470px;
+	top: 506px;
 	left: 32px;
 }
 
@@ -60,11 +61,11 @@ main h1 {
   font-weight: bold;
   color: #000000;
   text-align: center;
-  height: 100px;
+  height: 67px;
   width: 441px;
   vertical-align: center;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 55px;
 }
 
 main h2 {
@@ -73,7 +74,7 @@ main h2 {
   font-weight: normal;
   color: #333333;
   text-align: center;
-  height: 55px;
+  height: 65px;
   vertical-align: bottom;
 }
 
@@ -92,16 +93,15 @@ a {
 .main-header-logo{
 	position: absolute;
 	margin: 0 auto;
-	/*даун забыл, как отцентровать*/
-	left: 570px;
+	left: 565px;
 }
 
 .site-navigation {
 	padding: 0;
 	margin: 0;
 	
-	padding-left: 70px;
-	padding-top: 15px;
+	padding-left: 72px;
+	padding-top: 14px;
 	padding-bottom: 15px;
 	display: flex;
 	justify-content: space-between;
@@ -114,6 +114,17 @@ a {
 
 .site-navigation > li:nth-child(2){
 	margin-right: 200px;
+}
+
+.site-navigation > li:nth-child(3){
+	padding-left: 20px;
+	width: 150px;
+}
+
+.site-navigation > li:last-child a{
+	margin: 0;
+	padding: 0;
+    padding-left: 50px;
 }
 
 .site-navigation a {
@@ -129,12 +140,6 @@ a {
   opacity: 0.2;
 }
 
-/*зачем вообще visually-hidden заголовки*/
-
-/* h2 .visually-hidden{
-	display: none;
-} */
-
 /*--- Стили главной страницы ---*/
 
 .features-with-photos {
@@ -144,9 +149,6 @@ a {
   height: 256px;
 }
 
-.features-with-photos h2 {
-  text-align: inherit;
-}
 
 .features-item-description {
   width: 400px;
@@ -163,7 +165,9 @@ a {
   font-weight: bold;
   width: 150px;
   padding-left: 65px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  line-height: 21px;
 }
 
 .features-item-description span, .features-item-description p {
@@ -171,6 +175,14 @@ a {
   font-weight: normal;
   line-height: 1;
   /*из макета в фотошопе не могу достать высоту строки, в стайлгайде тоже нет*/
+}
+
+.features-item-description p{
+	padding-top: 8px;
+	line-height: inherit;
+	letter-spacing: 0;
+	width: 320px;
+	margin: 0 auto;
 }
 
 .features-item-photo {
@@ -192,9 +204,9 @@ a {
 
 .subfeature-item {
   background-color: #ffffff;
- 
   width: 400px;
-  padding-top: 50px;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 .subfeature-item h2 {
@@ -204,6 +216,7 @@ a {
   color: #000000;
   font-weight: bold;
   padding-top: 25px;
+  height: 45px;
 }
 
 .subfeature-item p {
@@ -213,8 +226,8 @@ a {
   color: #333333;
   font-weight: normal;
   
-  width: 255px;
-  padding-left: 70px;
+  width: 290px;
+  padding-left: 55px;
 }
 
 .rest-of-features-list {
@@ -226,9 +239,13 @@ a {
 }
 
 .rest-of-features-item {
-	padding-top: 60px;
+	padding-top: 45px;
 	background-color: #eeeeee;
 	width: 400px;
+}
+
+.rest-of-features-item-description{
+	text-align: center;
 }
 
 .rest-of-features-item-description h2 {
@@ -238,17 +255,14 @@ a {
   font-size: 21px;
   color: #000000;
   font-weight: bold;
-}
-/*это span не центруется, почему ?*/
-.rest-of-features-item-description span{
-	margin: 0 auto;
+  line-height: 21px;
 }
 .rest-of-features-item-description p{
 	margin: 0 auto;
-	margin-top: 30px;
+	margin-top: 25px;
 	margin-bottom: 60px;
 	
-	width: 220px;
+	width: 280px;
   /*для спана выравнивание не работает, почему ?*/
   text-align: center;
   font-size: 14px;
@@ -265,10 +279,11 @@ a {
   color: #000000;
   font-weight: bold;
   text-align: center;
-  font-size: 21px;
+  font-size: 30px;
   line-height: 26px;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 50px;
+  height: 60px;
 }
 
 .booking-info {
@@ -651,27 +666,30 @@ label{
 	background-color: f2f2f2; /*не могу задать цвет фона для рейтинга, хотя вроде как применяю свойство к контейнеру*/
 }
 
+/*--- продолжение стилей главной страницы --- */
+
+
 .booking-info{
 	margin-bottom: 140px;
 }
 
 .booking-form-header{
 	position: absolute;
-	top: 2050px;
-	left: 350px;		
+	top: 2100px;
+	left: 348px;		
 }
 
 .booking-form-header a{
-	padding: 30px 140px;
+	padding: 30px 138px;
 }
 
 .booking-form{
 	z-index: 1;
 	position: absolute;
-	top: 2120px;
-	left: 350px;
+	top: 2172px;
+	left: 348px;
 	
-	width: 573px;
+	width: 569px;
 	background-color: #ffffff;
 }
 
@@ -730,29 +748,59 @@ input[type="number"]{
 	margin-right: 27px;
 }
 
+.calendar{
+	position: absolute;
+	z-index: 2;
+}
+
+.calendar-check-in{
+	top: 60px;
+	left: 475px;
+}
+
+.calendar-check-out{
+	top: 115px;
+	left: 475px;
+}
+
+.adult .button-add{
+	position: absolute;
+	z-index: 3;
+	left: 180px;
+	top: 190px;
+}
+
 .button-find{
 	display: block;
-	margin: 50px 55px;
+	margin: 70px 57px;
+	margin-bottom: 58px;
 	padding: 15px 0;
+	padding-left: 4px;
 	width: 463px;
+	
 }
 
 .main-footer {
+	position: absolute;
+	top: 2652px;
+	
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   color: #000000;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
   
   margin: 0 auto;
   padding-top: 30px;
+  height: 80px;
+  width: 1200px;
 }
 
 
 .hashtag p{
 	margin: 0;
-	width: 400px;
-	
+	width: 270px;
 	padding-left: 130px;
+	padding-top: 8px;
 }
 
 .footer-hashtag a {
@@ -766,7 +814,7 @@ input[type="number"]{
 	margin: 0;
 	padding: 0;
 	
-  width: 200px;
+  width: 400px;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -780,13 +828,15 @@ input[type="number"]{
 	margin-bottom: 20px;
 }
 
+/*надо нормально отцентровать*/
 .social-button img{
-	position: relative;
+	margin-left: 15px;
+	margin-top: 15px;
 }
 
 .copyright{
-	width: 400px;
-	padding-left: 300px;
+	width: 290px;
+	padding-left: 110px;
 }
 .copyright p{
 	margin: 0;
