@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Larina: Седона</title>
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<!--<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">-->
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
   </head>
@@ -30,7 +31,7 @@
 			<img src="img/for-back.png" width="1200" height="57" alt="">
 		</section>
 		
-		<h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+		<h1>Седона - небольшой городок в Аризоне,<br/> заслуживающий большего!</h1>
 		<h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
 		
 		<section class="features-with-photos">
@@ -122,14 +123,14 @@
 			<form class="booking-form" action="https://echo.htmlacademy.ru" method="post">
 				<p class="booking-item">
 					<label for="your-check-in-date">Дата заезда:</label>
-					<input id="your-check-in-date" type="date" name="check-in-date" value="24 апреля 2016" placeholder="24 апреля 2016">
+					<input id="your-check-in-date" type="text" name="check-in-date" value="24 апреля 2016">
 					<button class="calendar calendar-check-in">
 						<img src="img/calendar.svg" width="21" height="22">
 					</button>
 				</p>
 				<p class="booking-item">
 					<label for="your-check-in-date">Дата выезда:</label>
-					<input id="your-check-out-date" type="date" name="check-out-date" value="" placeholder="4 июля 2016">
+					<input id="your-check-out-date" type="text" name="check-out-date" value="4 июля 2015">
 					<button class="calendar calendar-check-out">
 						<img src="img/calendar.svg" width="21" height="22">
 					</button>
@@ -137,14 +138,22 @@
 				<div class="adult-and-children">
 				<p class="booking-item">
 					<label for="your-adult-number">Взрослые:</label>
-					<input id="your-adult-number" type="number" name="adult-number" min="0" max="infty" value="" placeholder="2">
-					<button class="adult button-add">
+					<span class="input-wrapper">
+						<a class="search-form-minus" href="#">Less</a>
+						<input id="your-adult-number" type="number" name="adult-number" min="0" max="infty" value="" placeholder="2">
+						<a class="search-form-plus" href="#">More</a>
+					</span>
+					<!--<button class="adult button-add">
 						<img src="img/plus.png" width="11" height="11">
-					</button>
+					</button>-->
 				</p>
 				<p class="booking-item">
 					<label for="your-children-number">Дети:</label>
-					<input id="your-children-number" type="number" name="children-number" min="0" max="infty" value="" placeholder="0">
+					<span class="input-wrapper">
+						<a class="search-form-minus" href="#">Less</a>
+						<input id="your-children-number" type="number" name="children-number" min="0" max="infty" value="" placeholder="0">
+						<a class="search-form-plus" href="#">More</a>
+					</span>
 				</p>
 				</div>
 				<button class="button button-find" type="submit">Найти
@@ -175,9 +184,11 @@
 		<div class="copyright">
 			<p class="footer-copyright">
 				<b>Website by</b>
+				<a class="button button-copyright" href="https://htmlacademy.ru">HTML Academy</a>
+				<!--<b>Website by</b>
 				<a class="button button-copyright" href="https://htmlacademy.ru">
 					<img src="img/index-logo-name.svg" width="115" height="41" alt="html-academy">
-				</a>
+				</a>-->
 			</p>
 		</div>
 	</footer>

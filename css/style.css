@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   
-  font-family: "PT Sans", serif;
+  font-family: font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
@@ -74,7 +74,7 @@ main h1 {
   color: #000000;
   text-align: center;
   height: 67px;
-  width: 441px;
+  /*width: 460px;*/
   vertical-align: center;
   margin: 0 auto;
   padding-top: 55px;
@@ -390,7 +390,140 @@ a {
 	width: 1055px;
 }
 
-.price{
+.filter-range {
+  width: 330px;
+  margin: 0 auto; /* для демо */
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+  
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+/*.price{
 	margin-left: 260px;
 	display: flex;
 	flex-direction: column;
@@ -398,7 +531,7 @@ a {
 
 .price > * {
 	height: 40px;
-}
+}*/
 
 .filter fieldset {
   padding: 0;
@@ -503,13 +636,13 @@ label{
 }
 
 .sequencing-attribute-list-item{
-	width: 90px;
+	width: 110px;
 }
 
 .sequencing-attribute-list-item a {
   color: #000000;
   opacity: 0.5;
-  border-bottom: 1px dashed #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sequencing-attribute-list-item a:hover {
@@ -695,7 +828,7 @@ label{
 
 .booking-form-header{
 	position: absolute;
-	top: 167px;
+	top: 150px;
 	left: 50%;
 	transform: translateX(-50%);		
 }
@@ -717,6 +850,7 @@ label{
 
 .booking-item{
 	margin-left: 55px;
+	position: relative;
 }
 
 .booking-item:first-child{
@@ -737,7 +871,7 @@ label{
 	margin-right: 2px;
 }*/
 
-input[type="date"]{
+input[type="text"]{
 	height: 40px;
 	width: 345px;
 	padding-left: 10px;
@@ -749,6 +883,11 @@ input[type="number"]{
 	width: 65px;
 	padding-left: 50px;
 }
+
+.input-wrapper {
+  width: 114px;
+}
+
 
 .adult-and-children{
 	display: flex;
@@ -770,13 +909,39 @@ input[type="number"]{
 	margin-right: 27px;
 }
 
+
+
+.search-form-minus {
+  width: 24px;
+  height: 20px;
+  background: url(../img/minus.png) no-repeat 50% 50%;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  margin-top: -10px;
+  font-size: 0;
+  outline: 1px solid red;
+}
+
+.search-form-plus {
+  width: 24px;
+  height: 20px;
+  background: url("../img/plus.png") no-repeat 50% 50%;
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  margin-top: -10px;
+  font-size: 0;
+  outline: 1px solid red;
+}
+
 .calendar{
 	position: absolute;
 	z-index: 2;
 }
 
 .calendar-check-in{
-	top: 60px;
+	top: 50px;
 	left: 475px;
 }
 
@@ -863,9 +1028,19 @@ input[type="number"]{
 .copyright p{
 	margin: 0;
 }
-/*не знаю, как стилизовать кнопку копирайта, ведь это картинка. как раскрасить картинку ?*/
 
 .button-copyright {
-	/*пока не разобралась, тэг <svg> не работает в html*/
-	fill: #81b3d2;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 0;
+	background: url(../img/index-logo-name.svg) 0 0 no-repeat;
+	width: 150px;
+	height: 50px;
+	margin: 0 8px;
+}
+.button-copyright:hover a,
+.button-copyright:focus a{
+	/*не работает этот фокус*/
+	color: blue;
+	/*background: url(../img/index-logo-name_hover.svg) 0 0 no-repeat;*/
 }
