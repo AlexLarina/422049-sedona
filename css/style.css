@@ -599,7 +599,7 @@ label{
 	padding: 0;
 	margin: 0;
 	
-	margin-left: 70px;
+	padding-left: 70px;
 	padding-top: 30px;
 	
 	display: flex;
@@ -609,6 +609,7 @@ label{
 	
 	height: 55px;
 	border-bottom: 1px solid grey;
+	background-color: #ffffff;
 	/*иначе как этим маргином не выход отлепить флекс-элементы от правого края контейнера*/
 	/*видимо, надо поколдовать с justify-content или align-items, но у меня не получилось магии*/
 }
@@ -685,6 +686,14 @@ label{
 
 .sequencing-item{
 	width: 40px;
+	font-size: 0;
+	background: url("../img/icon-up-dir.svg") 0 0 no-repeat;
+}
+
+.sequencing-item-current{
+	width: 40px;
+	font-size: 0;
+	background: url("../img/icon-down-dir.svg") 0 0 no-repeat;
 }
 
 .catalog-list {
@@ -698,9 +707,10 @@ label{
 
 .catalog-item{
 	height: 150px;
-	
-	margin-left: 74px;
-	
+	background-color: #ffffff;
+	padding-left: 74px;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
 	display: flex;
 	justify-content: space-between;
 }
@@ -771,12 +781,12 @@ label{
 	width: 110px;
 }
 
-.more-info {
+.catalog-item-buttons .more-info {
   color: #ffffff;
   background-color: #81b3d2;
-  padding-right: 5px;
-  /*при попытке уменьшить текст внутри кнопки, вся кнопка уменьшается в размерах*/
-  /*font-size: 14px;*/
+  padding: 5px 15px;
+  font-size: 14px;
+  
 }
 
 .more-info:hover {
@@ -787,9 +797,11 @@ label{
   background-color: #5496bd;
 }
 
-.book {
+.catalog-item-buttons .book {
   background-color: #766357;
   color: #ffffff;
+  padding: 5px 15px;
+  font-size: 14px;
 }
 
 .book:hover {
