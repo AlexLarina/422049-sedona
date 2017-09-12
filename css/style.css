@@ -47,6 +47,7 @@ main{
 
 .welcome{
 	position: relative;
+	background-color: #ffffff;
 }
 
 .welcome > img:first-child{
@@ -82,6 +83,7 @@ main h1 {
   vertical-align: center;
   margin: 0 auto;
   padding-top: 55px;
+  background-color: #ffffff;
 }
 
 main h2 {
@@ -92,6 +94,11 @@ main h2 {
   text-align: center;
   height: 65px;
   vertical-align: bottom;
+  margin: 0;
+}
+
+.reasons{
+	background-color: #ffffff;
 }
 
 a {
@@ -218,7 +225,8 @@ a {
   display: flex;
   list-style: none;
   
-  margin-bottom: 63px;
+  padding-bottom: 63px;
+  background-color: #ffffff;
 }
 
 .subfeature-item {
@@ -300,7 +308,7 @@ a {
   font-size: 30px;
   line-height: 26px;
   margin: 0 auto;
-  margin-top: 52px;
+  padding-top: 52px;
   height: 60px;
 }
 
@@ -583,6 +591,10 @@ label{
   opacity: 0.5;
 }
 
+.filter-input-checkbox:checked{
+	background: url("../img/checkbox-on.svg") 0 0 no-repeat;
+}
+
 .filter-button {
   background-color: transparent;
   border: 2px solid #ffffff;
@@ -822,10 +834,14 @@ label{
 	height: 50px;
 	width: 260px;
 }
-
-.rating img{
-	padding-top: 30px;
+.star{
+	background: url("../img/star.svg") no-repeat;
+	outline: 1px solid red; 
 }
+
+/*.rating img{
+	padding-top: 30px;
+}*/
 
 .rate{
 	margin: 0;
@@ -888,17 +904,18 @@ label{
 	margin-right: 2px;
 }*/
 
-.book-item > input[type="text"]{
+.booking-item input[type="text"]{
 	height: 40px;
 	width: 345px;
 	padding-left: 10px;
 }
 
-input[type="number"]{
+.booking-item input[type="number"]{
 	margin: 0;
 	height: 40px;
-	width: 65px;
-	padding-left: 50px;
+	width: 25px;
+	text-align: center;
+	/*padding-left: 50px;*/
 }
 
 .input-wrapper {
@@ -929,27 +946,37 @@ input[type="number"]{
 
 
 .search-form-minus {
-  width: 24px;
+  /*width: 24px;
   height: 20px;
   background: url(../img/minus.png) no-repeat 50% 50%;
-  position: absolute;
   top: 50%;
   left: 0px;
   margin-top: -10px;
-  font-size: 0;
-  outline: 1px solid red;
+  font-size: 0;*/
+  
+  width: 40px;
+height: 40px;
+position: relative;
+padding: 0;
+background: #f2f2f2;
+border: none;
 }
 
 .search-form-plus {
-  width: 24px;
+  /*width: 24px;
   height: 20px;
   background: url("../img/plus.png") no-repeat 50% 50%;
   position: absolute;
   top: 50%;
   right: 8px;
   margin-top: -10px;
-  font-size: 0;
-  outline: 1px solid red;
+  font-size: 0;*/
+  width: 40px;
+height: 40px;
+position: relative;
+padding: 0;
+background: #f2f2f2;
+border: none;
 }
 
 .calendar{
@@ -958,13 +985,13 @@ input[type="number"]{
 }
 
 .calendar-check-in{
-	top: 50px;
-	left: 475px;
+	top: 5px;
+	left: 425px;
 }
 
 .calendar-check-out{
-	top: 115px;
-	left: 475px;
+	top: 5px;
+	left: 425px;
 }
 
 .adult .button-add{
