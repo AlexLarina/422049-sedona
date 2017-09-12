@@ -720,7 +720,7 @@ label{
 .catalog-item{
 	height: 150px;
 	background-color: #ffffff;
-	padding-left: 0 72px;
+	padding: 0 72px;
 	border-top: 1px solid #e5e5e5;
 	display: flex;
 	justify-content: space-between;
@@ -837,8 +837,14 @@ label{
 	height: 50px;
 	width: 260px;
 }
+.stars{
+	display: flex;
+	flex-direction: row;
+}
 .star{
 	background: url("../img/star.svg") no-repeat;
+	margin: 15px 15px;
+	padding: 15px 15px;
 	outline: 1px solid red; 
 }
 
@@ -848,8 +854,8 @@ label{
 
 .rate{
 	margin: 0;
-	padding-top: 45px;
-	background-color: f2f2f2; /*не могу задать цвет фона для рейтинга, хотя вроде как применяю свойство к контейнеру*/
+	margin-top: 45px;
+	background-color: #f2f2f2; /*не могу задать цвет фона для рейтинга, хотя вроде как применяю свойство к контейнеру*/
 }
 
 /*--- продолжение стилей главной страницы --- */
@@ -1015,7 +1021,6 @@ border: none;
 
 .main-footer {
 	position: absolute;
-	/*top: 2652px;*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1027,8 +1032,13 @@ border: none;
   padding-top: 30px;
   height: 120px;
   width: 1200px;
+  box-sizing: border-box;
 }
 
+.main-footer.inner{
+	position: relative;
+	margin: 0;
+}
 
 .hashtag p{
 	margin: 0;
