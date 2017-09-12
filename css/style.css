@@ -41,7 +41,6 @@ main{
 	
   width: 1200px;
   margin: 0 auto;
-  outline: 1px solid red;
   box-shadow: -3px 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -319,6 +318,7 @@ a {
   font-weight: normal;
   margin: 0 auto;
   width: 440px;
+  background-color: #ffffff;
 }
 
 .booking form{
@@ -387,6 +387,7 @@ a {
 
 .filters{
 	position: relative;
+	line-height: 1;
 }
 
 .filter{
@@ -620,7 +621,6 @@ label{
 	align-items: stretch;
 	
 	height: 55px;
-	border-bottom: 1px solid grey;
 	background-color: #ffffff;
 	/*иначе как этим маргином не выход отлепить флекс-элементы от правого края контейнера*/
 	/*видимо, надо поколдовать с justify-content или align-items, но у меня не получилось магии*/
@@ -720,11 +720,14 @@ label{
 .catalog-item{
 	height: 150px;
 	background-color: #ffffff;
-	padding-left: 74px;
-	border-top: 1px solid gray;
-	border-bottom: 1px solid gray;
+	padding-left: 0 72px;
+	border-top: 1px solid #e5e5e5;
 	display: flex;
 	justify-content: space-between;
+}
+
+.catalog-item:last-child{
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .catalog-item-image{
@@ -855,25 +858,24 @@ label{
 	position: relative;
 }
 
-.booking-info{
-	margin-bottom: 140px;
-}
 
 .booking-form-header{
-	position: absolute;
-	top: 150px;
-	left: 50%;
-	transform: translateX(-50%);		
+	margin: 10px 0 0;		
+	display: block;
+	text-align: center;
 }
 
 .booking-form-header a{
 	padding: 30px 138px;
+display: block;
+width: 569px;
+box-sizing: border-box;
+margin: 0 auto
 }
 
 .booking-form{
 	z-index: 1;
 	position: absolute;
-	top: 245px;
 	left: 50%;
 	transform: translateX(-50%);
 	
@@ -1014,7 +1016,6 @@ border: none;
 .main-footer {
 	position: absolute;
 	/*top: 2652px;*/
-	bottom: -120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1022,6 +1023,7 @@ border: none;
   background-color: rgba(255, 255, 255, 0.9);
   
   margin: 0 auto;
+  margin-top: -120px; 
   padding-top: 30px;
   height: 120px;
   width: 1200px;
@@ -1080,6 +1082,10 @@ transform: translate(-50%, -50%)
 	margin: 0;
 }
 
+.footer-copyright b{
+	font-weight: normal;
+}
+
 .button-copyright {
 	display: inline-block;
 	vertical-align: middle;
@@ -1089,9 +1095,9 @@ transform: translate(-50%, -50%)
 	height: 50px;
 	margin: 0 8px;
 }
-.button-copyright:hover a,
-.button-copyright:focus a{
-	/*не работает этот фокус*/
+/*.button-copyright:hover,
+.button-copyright:focus{
+	/*не работает этот фокус
 	color: blue;
 	background: url(../img/index-logo-name-hover.svg) 0 0 no-repeat;
-}
+}*/
