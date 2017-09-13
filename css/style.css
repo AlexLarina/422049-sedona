@@ -82,6 +82,7 @@ main h1 {
   vertical-align: center;
   margin: 0 auto;
   padding-top: 55px;
+  padding-bottom: 10px;
   background-color: #ffffff;
 }
 
@@ -91,7 +92,7 @@ main h2 {
   font-weight: normal;
   color: #333333;
   text-align: center;
-  height: 65px;
+  height: 77px;
   vertical-align: bottom;
   margin: 0;
 }
@@ -127,6 +128,7 @@ a {
 	padding-left: 72px;
 	padding-top: 14px;
 	padding-bottom: 15px;
+	padding-right: 72px;
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
@@ -134,21 +136,22 @@ a {
 
 .site-navigation > li{
 	width: 200px;
+	margin: 0;
+	padding: 0;
 }
 
 .site-navigation > li:nth-child(2){
-	margin-right: 200px;
+	margin-right: 180px;
+	margin-left: 50px;
 }
 
 .site-navigation > li:nth-child(3){
-	padding-left: 20px;
+	padding-left: 120px;
 	width: 150px;
 }
 
-.site-navigation > li:last-child a{
-	margin: 0;
-	padding: 0;
-    padding-left: 50px;
+.site-navigation > li:last-child{
+	text-align: right;
 }
 
 .site-navigation a {
@@ -189,8 +192,8 @@ a {
   font-weight: bold;
   text-align: center;
   
-  width: 150px;
-  
+  width: 170px;
+  height: 65px;
   padding-top: 50px;
   line-height: 21px;
 }
@@ -203,7 +206,7 @@ a {
 }
 
 .features-item-description p{
-	padding-top: 18px;
+	padding-top: 20px;
 	line-height: inherit;
 	letter-spacing: 0;
 	width: 320px;
@@ -254,6 +257,7 @@ a {
   
   width: 290px;
   padding-left: 55px;
+  padding-top: 2px;
 }
 
 .rest-of-features-list {
@@ -282,10 +286,11 @@ a {
   color: #000000;
   font-weight: bold;
   line-height: 21px;
+  height: 67px;
 }
 .rest-of-features-item-description p{
 	margin: 0 auto;
-	margin-top: 25px;
+	margin-top: 23px;
 	margin-bottom: 60px;
 	width: 280px;
   /*для спана выравнивание не работает, почему ?*/
@@ -293,6 +298,11 @@ a {
   font-size: 14px;
   color: #333333;
   font-weight: normal;
+}
+
+.button-map img{
+	/*padding-top: 40px;*/
+	background-color: #ffffff;
 }
 
 .booking {
@@ -351,6 +361,7 @@ a {
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
   color: #000000;
+  font-weight: bold;
 }
 
 .booking-item input:hover {
@@ -840,12 +851,11 @@ label{
 .stars{
 	display: flex;
 	flex-direction: row;
+	margin-top: 28px;
 }
 .star{
-	background: url("../img/star.svg") no-repeat;
-	margin: 15px 15px;
-	padding: 15px 15px;
-	outline: 1px solid red; 
+	background: url("../img/star.svg") center no-repeat;
+	padding: 0 12px;
 }
 
 /*.rating img{
@@ -854,8 +864,12 @@ label{
 
 .rate{
 	margin: 0;
-	margin-top: 45px;
+	margin-top: 65px;
 	background-color: #f2f2f2; /*не могу задать цвет фона для рейтинга, хотя вроде как применяю свойство к контейнеру*/
+	font-size: 14px;
+	line-height: 21px;
+	padding: 3px 13px;
+	color: #666666;
 }
 
 /*--- продолжение стилей главной страницы --- */
@@ -866,7 +880,7 @@ label{
 
 
 .booking-form-header{
-	margin: 10px 0 0;		
+	margin: 50px 0 0;		
 	display: block;
 	text-align: center;
 }
@@ -891,6 +905,7 @@ margin: 0 auto
 
 .booking-item{
 	margin-left: 55px;
+	margin-bottom: 28px;
 	position: relative;
 }
 
@@ -900,7 +915,7 @@ margin: 0 auto
 
 .booking-item label{
 	font-weight: bold;
-	margin-right: 17px;
+	margin-right: 19px;
 }
 
 .booking-item input:first-child{
@@ -913,21 +928,27 @@ margin: 0 auto
 }*/
 
 .booking-item input[type="text"]{
-	height: 40px;
-	width: 345px;
-	padding-left: 10px;
+	height: 38px;
+	width: 335px;
+	padding-left: 15px;
+	text-transform: uppercase;
+	font-size: 13px;
+	border: none;
 }
-
-.booking-item input[type="number"]{
+.input-wrapper input[type="text"]{
 	margin: 0;
 	height: 40px;
 	width: 25px;
+	padding: 0;
+	border: 0;
 	text-align: center;
-	/*padding-left: 50px;*/
 }
 
 .input-wrapper {
   width: 114px;
+  height: 40px;
+  background-color: #f2f2f2;
+  vertical-align: center;
 }
 
 
@@ -968,6 +989,8 @@ position: relative;
 padding: 0;
 background: #f2f2f2;
 border: none;
+font-size: 21px;
+color: #a9a9a9;
 }
 
 .search-form-plus {
@@ -985,11 +1008,16 @@ position: relative;
 padding: 0;
 background: #f2f2f2;
 border: none;
+font-size: 21px;
+color: #a9a9a9;
 }
 
 .calendar{
 	position: absolute;
 	z-index: 2;
+	border: none;
+	background: none;
+	color: #a9a9a9;
 }
 
 .calendar-check-in{
@@ -1011,11 +1039,11 @@ border: none;
 
 .button-find{
 	display: block;
-	margin: 70px 57px;
-	margin-bottom: 58px;
+	margin: 50px auto;
 	padding: 15px 0;
-	padding-left: 4px;
-	width: 463px;
+	/*padding-left: 4px;*/
+	width: 460px;
+	font-size: 21px;
 	
 }
 
@@ -1028,8 +1056,7 @@ border: none;
   background-color: rgba(255, 255, 255, 0.9);
   
   margin: 0 auto;
-  margin-top: -120px; 
-  padding-top: 30px;
+  margin-top: -105px; 
   height: 120px;
   width: 1200px;
   box-sizing: border-box;
@@ -1062,6 +1089,8 @@ border: none;
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding-top: 20px;
 }
 
 .footer-social li{
@@ -1086,7 +1115,7 @@ transform: translate(-50%, -50%)
 
 .copyright{
 	width: 290px;
-	padding-left: 110px;
+	padding-left: 100px;
 }
 .copyright p{
 	margin: 0;
@@ -1101,9 +1130,10 @@ transform: translate(-50%, -50%)
 	vertical-align: middle;
 	font-size: 0;
 	background: #ffffff url(../img/index-logo-name.svg) 0 0 no-repeat;
-	width: 150px;
+	width: 115px;
 	height: 50px;
-	margin: 0 8px;
+	margin: 0 2px;
+	margin-top: 11px;
 }
 /*.button-copyright:hover,
 .button-copyright:focus{
