@@ -399,7 +399,9 @@ a {
 .filters{
 	position: relative;
 	line-height: 1;
-	/*background: url("../img/inner-filter-background.jpg") 0 0 no-repeat;*/
+	background: url("../img/inner-filter-background.jpg") top center no-repeat;
+	width: 1200px;
+	height: 217px;
 }
 
 .filter{
