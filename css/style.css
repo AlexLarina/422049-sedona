@@ -399,6 +399,7 @@ a {
 .filters{
 	position: relative;
 	line-height: 1;
+	/*background: url("../img/inner-filter-background.jpg") 0 0 no-repeat;*/
 }
 
 .filter{
@@ -592,9 +593,15 @@ a {
 
 .filter-option label{
 	color: #ffffff;
-	padding-bottom: -10px;
+	/*padding-bottom: -10px;
 	margin: 0;
-	height: 50px;
+	height: 50px;*/
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: flex-start;
 }
 /*вот это дело не работает*/
 
@@ -806,7 +813,13 @@ a {
 	height: 100px;
 }
 
-.catalog-item-type-price h2{
+.catalog-item-type-price div{
+	width: 112px;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+/*.catalog-item-type-price h2{
 	margin: 0;
 	padding-right: 35px;
 	padding-top: 2px;
@@ -815,7 +828,7 @@ a {
 
 .catalog-item-type-price span{
 	padding-top: 5px;
-}
+}*/
 
 .catalog-item-buttons{
 	padding-top: 3px;
@@ -1120,6 +1133,10 @@ color: #a9a9a9;
 	margin-right: 5px;
 	margin-bottom: 20px;
 	position: relative;
+}
+
+.footer-social li:last-child{
+	margin-right: 10px;
 }
 
 /*надо нормально отцентровать*/
