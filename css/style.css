@@ -17,7 +17,8 @@ main{
 	position: relative;
 }
 
-.visually-hidden:not(:focus):not(:active){
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden{
 	position: absolute;
 	
 	width: 1px;
