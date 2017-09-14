@@ -568,7 +568,7 @@ a{
 .filter-range{
 	width: 330px;
 	margin: 0 auto; 
-	margin-left: 215px;
+	margin-left: 230px;
   
 	color: #ffffff;
 	text-transform: uppercase;
@@ -616,10 +616,14 @@ a{
 	cursor: pointer;
 }
 
-.price-controls .min-price,
-.price-controls .max-price{
+.price-controls .min-price{
 	width: 90px;
 	padding-left: 65px;
+}
+
+.price-controls .max-price{
+	width: 90px;
+	padding-left: 55px;
 }
 
 .price-controls input{
@@ -680,8 +684,8 @@ a{
 .btn-transparent{
 	display: block;
 	margin: 0 auto;
-	padding: 6px 35px;
-
+	margin-left: 82px;
+	padding: 6px 30px;
 	font-size: 14px;
 	line-height: 20px;
 	color: #ffffff;
@@ -703,7 +707,7 @@ a{
 	padding: 0;
 	margin: 0;
   
-	width: 270px;
+	width: 265px;
 	border: none;
 }
 
@@ -712,7 +716,8 @@ a{
 	line-height: 21px;
 	font-weight: 600;
 	color: #ffffff; 
-	margin-bottom: 15px;
+	margin-bottom: 7px;
+	padding-top: 2px;
 }
 
 .filter ul{
@@ -723,11 +728,15 @@ a{
 
 .filter li{
 	color: #ffffff; 
-	margin-bottom: 15px;
+	margin-bottom: 23px;
+}
+
+.filter li:nth-child(2){
+	margin-bottom: 19px;
 }
 
 .filter img{
-	margin-right: 20px;
+	margin-right: 15px;
 }
 
 .filter-option label{
@@ -769,8 +778,8 @@ a{
 	padding: 0;
 	margin: 0;
 	
-	padding-left: 70px;
-	padding-top: 30px;
+	padding-left: 71px;
+	padding-top: 31px;
 	
 	display: flex;
 	flex-direction: row;
@@ -793,7 +802,7 @@ a{
 
 .result-filter h2{
 	padding: 0;
-	padding-top: 5px;
+	padding-top: 6px;
 	margin: 0;
 	
 	margin-right: 45px;
@@ -862,7 +871,7 @@ a{
 }
 
 .sequencing-item{
-	width: 25px;
+	width: 20px;
 	font-size: 0;
 	background: url("../img/icon-up-dir.png") 0 0 no-repeat;
 }
@@ -898,7 +907,7 @@ a{
 .catalog-item-image{
 	margin: 0;
 	
-	padding-top: 30px;
+	padding-top: 32px;
 	padding-bottom: 30px;
 	
 	width: 135px;
@@ -919,7 +928,7 @@ a{
 	height: 46px;
 	text-align: left;
 	
-	padding-top: 25px;
+	padding-top: 27px;
 }
 
 .catalog-item-name a{
@@ -953,7 +962,7 @@ a{
 }
 
 .catalog-item-buttons{
-	padding-top: 3px;
+	padding-top: 4px;
 	height: 100%;
 }
 
@@ -964,7 +973,8 @@ a{
 .catalog-item-buttons .more-info {
 	color: #ffffff;
 	background-color: #81b3d2;
-	padding: 5px 18px;
+	padding: 5px 17px;
+	margin-right: 3px;
 	font-size: 14px;
 	line-height: 21px;
 }
@@ -980,7 +990,7 @@ a{
 .catalog-item-buttons .book{
 	background-color: #766357;
 	color: #ffffff;
-	padding: 5px 18px;
+	padding: 5px 17px;
 	font-size: 14px;
 	line-height: 21px;
 }
@@ -1008,12 +1018,12 @@ a{
 }
 .star{
 	background: url("../img/star.svg") center no-repeat;
-	padding: 0 12px;
+	padding: 0 11px;
 }
 
 .rate{
 	margin: 0;
-	margin-top: 65px;
+	margin-top: 67px;
 	background-color: #f2f2f2; 
 	font-size: 14px;
 	line-height: 21px;
