@@ -434,24 +434,32 @@ a{
 	border: 1px solid #f2f2f2;
 }
 
+.booking-item-people{
+	display: flex;
+}
+
 .input-wrapper{
-  width: 114px;
+  /*width: 114px;
   height: 40px;
   background-color: #f2f2f2;
-  vertical-align: center;
+  vertical-align: center;*/
+  display: flex;
 }
 
 .input-wrapper input[type="text"]{
-	margin: 0;
+	/*margin: 0;
 	height: 40px;
 	width: 25px;
 	padding: 0;
 	border: 0;
-	text-align: center;
+	text-align: center;*/
+	width: 20px;
+	height: 37px;
 }
 
 .adult-and-children{
 	display: flex;
+	align-items: center;
 }
 
 .adult-and-children > .booking-item{
@@ -463,33 +471,37 @@ a{
 }
 
 .booking-item-people:first-child label{
-	margin-right: 35px;
+	margin-right: 40px;
+	margin-top: 5px;
 	margin-bottom: 5px;
 }
 
 .booking-item-people:last-child label{
+	margin-top: 5px;
 	margin-right: 27px;
 }
 
 .search-form-minus{
 	width: 40px;
-	height: 40px;
+	height: 37px;
 	position: relative;
 	padding: 0;
 	background-color: #f2f2f2;
 	border: none;
 	font-size: 21px;
+	font-weight: bold;
 	color: #a9a9a9;
 }
 
 .search-form-plus{
 	width: 40px;
-	height: 40px;
+	height: 37px;
 	position: relative;
 	padding: 0;
 	background-color: #f2f2f2;
 	border: none;
 	font-size: 21px;
+	font-weight: bold;
 	color: #a9a9a9;
 }
 
@@ -535,6 +547,7 @@ a{
 .button-find{
 	display: block;
 	margin: 50px auto;
+	margin-top: 55px;
 	padding: 15px 0;
 	width: 456px;
 	font-size: 21px;
