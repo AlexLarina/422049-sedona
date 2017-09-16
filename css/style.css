@@ -148,6 +148,10 @@ a{
 	opacity: 0.2;
 }
 
+.site-navigation-current{
+	color: #766357;
+}
+
 /*--- Main page styles ---*/
 
 .welcome{
@@ -365,7 +369,8 @@ a{
 }
 
 .booking-form-header a:active{
-	opacity: 0.5;
+	background-color: #503e33;
+	color: #928a85;
 }
 
 .booking form{
@@ -438,12 +443,17 @@ a{
 	display: flex;
 }
 
+.booking-item-people input[type="text"]:hover{
+	background-color: #f2f2f2;
+}
+
 .input-wrapper{
   /*width: 114px;
   height: 40px;
   background-color: #f2f2f2;
   vertical-align: center;*/
   display: flex;
+  background-color: #f2f2f2;
 }
 
 .input-wrapper input[type="text"]{
@@ -481,6 +491,10 @@ a{
 	margin-right: 27px;
 }
 
+.booking-item-people input[type="text"]{
+	padding-left: 14px;
+}
+
 .search-form-minus{
 	width: 40px;
 	height: 37px;
@@ -505,22 +519,35 @@ a{
 	color: #a9a9a9;
 }
 
+.search-form-minus:hover,
+.search-form-minus:focus,
+.search-form-plus:hover,
+.search-form-plus:focus{
+	color: black;
+}
+
+.search-form-minus:active,
+.search-form-plus:active{
+	color: #81b3d2;
+}
+
 .calendar{
 	position: absolute;
 	z-index: 2;
 	border: none;
-	background: none;
-	color: #a9a9a9;
+	top: 7px;
+	left: 425px;
+	width: 21px;
+	height: 22px;
+	background: url("../img/calendar.png") 0 0 no-repeat;
 }
 
-.calendar-check-in{
-	top: 7px;
-	left: 420px;
+.calendar:hover{
+	background: url("../img/calendar-hover.png") 0 0 no-repeat;
 }
 
-.calendar-check-out{
-	top: 7px;
-	left: 420px;
+.calendar:active{
+	background: url("../img/calendar-active.png") 0 0 no-repeat;
 }
 
 .button{
@@ -539,9 +566,9 @@ a{
 	background-color: #669ec0;
 }
 
-.button:focus{
+.button:active{
 	background-color: #5496bd;
-	opacity: 0.5;
+	color: #94b9d2;
 }
 
 .button-find{
@@ -555,7 +582,11 @@ a{
 	letter-spacing: inherit;
 }
 
+/*.modal-form{
+	display: none;
+}
 .modal-show{
+	display: block;
 	
 	animation-name: move;
     animation-duration: 2s;
@@ -569,7 +600,7 @@ a{
     to {
 		transform: translateY(0px);
     }
-}
+}*/
 
 /* --- Inner page styles ---*/
 
@@ -901,13 +932,18 @@ a{
 .sequencing-attribute-list-item a:hover{
 	color: #81b3d2;
 	opacity: 1;
-	border-bottom: none;
+	border-bottom: 1px dotted #81b3d2;
 }
 
 .sequencing-attribute-list-item a:active{
 	border-bottom: none;
 	color: #000000;
 	opacity: 1;
+}
+
+.sequencing-attribute-list-item-current a{
+	border-bottom: none;
+	color: #81b3d2;
 }
 
 .sequencing-item a{
@@ -940,10 +976,28 @@ a{
 	background: #ffffff url("../img/icon-up-dir.png") 0 0 no-repeat;
 }
 
+.sequencing-item:hover{
+	width: 20px;
+	font-size: 0;
+	background: #ffffff url("../img/icon-up-dir-hover.png") 0 0 no-repeat;
+}
+
+.sequencing-item:active{
+	width: 20px;
+	font-size: 0;
+	background: #ffffff url("../img/icon-up-dir-active.png") 0 0 no-repeat;
+}
+
 .sequencing-item-current{
 	width: 25px;
 	font-size: 0;
 	background: #ffffff url("../img/icon-down-dir.png") 0 0 no-repeat;
+}
+
+.sequencing-item-current:hover{
+	width: 25px;
+	font-size: 0;
+	background: #ffffff url("../img/icon-down-dir-hover.png") 0 0 no-repeat;
 }
 
 .catalog-list{
@@ -1008,7 +1062,7 @@ a{
 }
 
 .catalog-item-name a:active{
-	color: #000000;
+	color: #cacaca;
 	opacity: 0.5;
 }
 
@@ -1049,6 +1103,7 @@ a{
 
 .more-info:active{
 	background-color: #5496bd;
+	color: #94b9d2;
 }
 
 .catalog-item-buttons .book{
@@ -1064,7 +1119,8 @@ a{
 }
 
 .book:active{
-	background-color: rgba(80, 62, 51, 0.5);
+	background-color: #503e33;
+	color: #928a85;
 }
 
 .rating{
@@ -1155,6 +1211,10 @@ a{
 	margin-right: 10px;
 }
 
+.footer-social li:hover{
+	background: #669ec0;
+}
+
 .social-button img{
 	position: absolute;
 	top: 50%;
@@ -1179,9 +1239,16 @@ a{
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 0;
-	background: #ffffff url("../img/index-logo-name.svg") 0 0 no-repeat;
+	background: #ffffff url("../img/logo-name.png") 0 0 no-repeat;
 	width: 115px;
 	height: 50px;
 	margin: 0 2px;
 	margin-top: 11px;
+}
+
+.button-copyright:hover{
+	background: url("../img/logo-name-hover.png") 0 0 no-repeat;
+}
+.button-copyright:active{
+	background: url("../img/logo-name-active.png") 0 0 no-repeat;
 }

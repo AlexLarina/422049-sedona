@@ -5,7 +5,7 @@
       <title>Sedona</title>
       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
       <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/style.minimized.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
       <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
    </head>
    <body>
@@ -16,7 +16,7 @@
                <img src="img/logo.png" width="138" height="70" alt="Логотип города Седона">
                </a>
                <ul class="site-navigation">
-                  <li><a href="#">Информация</a></li>
+                  <li><a class="site-navigation-current" href="#">Информация</a></li>
                   <li><a href="#">Фото и видео</a></li>
                   <li><a href="#">Карта штата</a></li>
                   <li><a href="inner.html">Гостиницы</a></li>
@@ -119,21 +119,21 @@
                      <label for="your-check-in-date">Дата заезда:</label>
                      <input id="your-check-in-date" type="text" name="check-in-date" value="24 апреля 2017">
                      <button class="calendar calendar-check-in">
-                     <img src="img/calendar.svg" width="21" height="22" alt="calendar">
+                     <!--<img src="img/calendar.svg" width="21" height="22" alt="calendar">-->
                      </button>
                   </p>
                   <p class="booking-item">
                      <label for="your-check-out-date">Дата выезда:</label>
                      <input id="your-check-out-date" type="text" name="check-out-date" value="4 июля 2017">
                      <button class="calendar calendar-check-out">
-                     <img src="img/calendar.svg" width="21" height="22" alt="calendar">
+                     <!--<img src="img/calendar.svg" width="21" height="22" alt="calendar">-->
                      </button>
                   </p>
                   <div class="adult-and-children">
                      <p class="booking-item booking-item-people">
                         <label for="your-adult-number">Взрослые:</label>
                         <span class="input-wrapper">
-                        <button class="search-form-minus" type="button">-</button>
+                        <button class="search-form-minus" type="button">−</button>
                         <input id="your-adult-number" type="text" name="adult-number" value="" placeholder="2" disabled>
                         <button class="search-form-plus" type="button">+</button>
                         </span>
@@ -141,7 +141,7 @@
                      <p class="booking-item booking-item-people">
                         <label for="your-children-number">Дети:</label>
                         <span class="input-wrapper">
-                        <button class="search-form-minus" type="button">-</button>
+                        <button class="search-form-minus" type="button">−</button>
                         <input id="your-children-number" type="text" name="children-number" value="" placeholder="0" disabled>
                         <button class="search-form-plus" type="button">+</button>
                         </span>
@@ -168,15 +168,15 @@
             </div>
             <div class="footer-social">
                <ul>
-                  <li><a class="social-button" href="#"><span class="visually-hidden">Vk</span>
+                  <li><a class="social-button" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">twitter</span>
                      <img src="img/t.png" width="17" height="15" alt="twitter">
                      </a>
                   </li>
-                  <li><a class="social-button" href="#"><span class="visually-hidden">F</span>
+                  <li><a class="social-button" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">F</span>
                      <img src="img/fb-icon.png" width="12" height="22" alt="twitter">
                      </a>
                   </li>
-                  <li><a class="social-button" href="#"><span class="visually-hidden">Youtube</span>
+                  <li><a class="social-button" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Youtube</span>
                      <img src="img/youtube.png" width="20" height="16" alt="twitter">
                      </a>
                   </li>
@@ -190,6 +190,6 @@
             </div>
          </footer>
       </div>
-	  <script src="js/script.minimized.js"></script>
+	  <!--<script src="js/script.minimized.js"></script>-->
    </body>
 </html>
