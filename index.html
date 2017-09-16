@@ -5,7 +5,7 @@
       <title>Sedona</title>
       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
       <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
+      <link href="css/style.minimized.css" rel="stylesheet">
       <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
    </head>
    <body>
@@ -134,7 +134,7 @@
                         <label for="your-adult-number">Взрослые:</label>
                         <span class="input-wrapper">
                         <button class="search-form-minus" type="button">-</button>
-                        <input id="your-adult-number" type="text" name="adult-number" value="" placeholder="2">
+                        <input id="your-adult-number" type="text" name="adult-number" value="" placeholder="2" disabled>
                         <button class="search-form-plus" type="button">+</button>
                         </span>
                      </p>
@@ -142,7 +142,7 @@
                         <label for="your-children-number">Дети:</label>
                         <span class="input-wrapper">
                         <button class="search-form-minus" type="button">-</button>
-                        <input id="your-children-number" type="text" name="children-number" value="" placeholder="0">
+                        <input id="your-children-number" type="text" name="children-number" value="" placeholder="0" disabled>
                         <button class="search-form-plus" type="button">+</button>
                         </span>
                      </p>
@@ -151,9 +151,16 @@
                </form>
 			   </section>
             </section>
-            <a class="button-map">
+			<iframe  
+				width="1200" 
+				height="593"
+				frameborder="0" style="border:0"
+				src="https://www.google.com/maps/embed/v1/search?key=AIzaSyC0OwkHP2f0-kct9PRtR1LEUafAoNfX07o&q=Sedona&zoom=9&center=34.869854,-111.761137"
+			allowfullscreen>	
+			</iframe>
+            <!--<a class="button-map">
             <img src="img/index-map.jpg" width="1200" height="593" alt="как добраться до Седоны">
-            </a>
+            </a>-->
          </main>
          <footer class="main-footer index">
             <div class="hashtag">
@@ -183,6 +190,6 @@
             </div>
          </footer>
       </div>
-	  <script src="js/script.js"></script>
+	  <script src="js/script.minimized.js"></script>
    </body>
 </html>

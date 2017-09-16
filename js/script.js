@@ -5,5 +5,5 @@ indexForm.classList.remove("modal-show");
 
 indexButton.addEventListener("click", function(e){
 	e.preventDefault();
-	indexForm.classList.add("modal-show");
+	indexForm.classList.toggle("modal-show");
 });
