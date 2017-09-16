@@ -556,7 +556,6 @@ a{
 }
 
 .modal-show{
-	display: block;
 	
 	animation-name: move;
     animation-duration: 2s;
@@ -564,11 +563,11 @@ a{
 }
 
 @keyframes move {
-	from {
-		top: 0%;
+	from{
+		transform: translateY(-400px);	
 	}
     to {
-		transform: translateY(400px);
+		transform: translateY(0px);
     }
 }
 
