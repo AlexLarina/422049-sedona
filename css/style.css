@@ -15,6 +15,7 @@ body{
 
 main{
 	position: relative;
+	background-color: #ffffff;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -65,7 +66,7 @@ main h1{
 	background-color: #ffffff;
 }
 
-h1 div{
+.sedona-description{
 	margin: 0 auto;
 	width: 440px;
 }
@@ -1265,7 +1266,11 @@ a{
 	color: #666666;
 }
 
-/* --- Footer ---- */
+iframe{
+	border: none;
+}
+
+/* --- Footer --- */
 
 .main-footer{
 	position: absolute;
