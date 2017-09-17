@@ -333,8 +333,8 @@ a{
 	font-weight: normal;
 }
 
-.button-map img{
-	background-color: #ffffff;
+.index-map{
+	background: #ffffff url("../img/index-map.jpg") 0 0 no-repeat;
 }
 
 .booking{
