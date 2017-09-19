@@ -353,7 +353,7 @@ a{
 	font-size: 30px;
 	line-height: 34px;
 	margin: 0 auto;
-	padding-top: 52px;
+	padding-top: 50px;
 	height: 30px;
 }
 
@@ -370,7 +370,7 @@ a{
 }
 
 .booking-form-header{
-	margin: 47px 0 0;		
+	margin: 48px 0 0;		
 	display: block;
 	text-align: center;
 }
@@ -418,7 +418,7 @@ a{
 }
 
 .booking-item{
-	margin-left: 57px;
+	margin-left: 56px;
 	margin-bottom: 30px;
 	position: relative;
 }
@@ -439,6 +439,7 @@ a{
 
 .booking-item:nth-child(2) label{
 	margin-right: 11px;
+	padding-top: 8px;
 }
 
 .booking-item input{
@@ -504,18 +505,22 @@ a{
 }
 
 .adult-and-children > .booking-item{
-	margin-left: 54px;
+	margin-left: 56px;
+}
+
+.adult-and-children > .booking-item:nth-child(2){
+	margin-left: 53px;
 }
 
 .booking-item-people:first-child label{
 	margin-right: 38px;
-	padding-top: 7px;
+	padding-top: 5px;
 	margin-bottom: 5px;
 }
 
 .booking-item-people:last-child label{
-	padding-top: 7px;
-	margin-right: 27px;
+	padding-top: 5px;
+	margin-right: 25px;
 }
 
 .booking-item-people input[type="text"]{
@@ -563,7 +568,7 @@ a{
 	z-index: 2;
 	border: none;
 	top: 7px;
-	left: 425px;
+	left: 427px;
 	width: 21px;
 	height: 22px;
 	background: url("../img/calendar.png") 0 0 no-repeat;
