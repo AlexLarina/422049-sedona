@@ -430,14 +430,15 @@ a{
 .booking-item label{
 	color: #000000;
 	font-weight: bold;
-	font: 14px;
+	font-size: 14px;
 	line-height: 26px;
-	margin-right: 19px;
-	padding-top: 3px;
+	margin-right: 15px;
+	padding-top: 10px;
+	letter-spacing: 0.4px;
 }
 
 .booking-item:nth-child(2) label{
-	margin-right: 15px;
+	margin-right: 11px;
 }
 
 .booking-item input{
@@ -452,11 +453,9 @@ a{
 	height: 38px;
 	width: 333px;
 	padding-left: 12px;
-	
 	text-transform: uppercase;
 	font-size: 13px;
 	font-weight: 600;
-	
 	border: none;
 }
 
@@ -505,22 +504,22 @@ a{
 }
 
 .adult-and-children > .booking-item{
-	margin-left: 55px;
+	margin-left: 54px;
 }
 
 .booking-item-people:first-child label{
-	margin-right: 40px;
-	margin-top: 3px;
+	margin-right: 38px;
+	padding-top: 7px;
 	margin-bottom: 5px;
 }
 
 .booking-item-people:last-child label{
-	margin-top: 3px;
+	padding-top: 7px;
 	margin-right: 27px;
 }
 
 .booking-item-people input[type="text"]{
-	padding-left: 14px;
+	padding-left: 13px;
 }
 
 .search-form-minus{
